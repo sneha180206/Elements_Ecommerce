@@ -1,0 +1,9 @@
+body{margin:0;font-family:Inter;background:#F5F2ED;color:#111}h1,h2,.logo{font-family:'Playfair Display',serif}nav{position:sticky;top:0;display:flex;justify-content:space-between;padding:20px 5%;backdrop-filter:blur(12px);background:rgba(245,242,237,.7)}a{text-decoration:none;color:#111;margin:0 10px}.hero{height:100vh;display:flex;align-items:center;padding:0 10%;background:linear-gradient(rgba(245,242,237,.5),rgba(245,242,237,.7)),url('assets/henley.jpg') center/cover}.hero h1{font-size:4rem}.hero button,button{background:#111;color:#fff;border:0;padding:14px 24px}.stats,.cloud-grid,#productGrid{display:grid;gap:20px}.stats{grid-template-columns:repeat(3,1fr);padding:60px 10%}#productGrid,.cloud-grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));padding:20px 10%}.product,.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.08);transition:.3s}.product:hover,.card:hover{transform:translateY(-8px)}.product img{width:100%;height:260px;object-fit:cover}.newsletter,#products,#featured,#contact,#order{text-align:center;padding:70px 5%}form{max-width:600px;margin:auto;display:grid;gap:10px}input,textarea{padding:12px}#top{position:fixed;right:20px;bottom:20px}@media(max-width:768px){.hero h1{font-size:2.5rem}.stats{grid-template-columns:1fr}}
+
+/* Final Luxury Hero Update */
+.logo{font-weight:800!important;letter-spacing:2px;}
+.hero{
+background:
+linear-gradient(rgba(245,242,237,.72),rgba(245,242,237,.72)),
+url('https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat !important;
+}

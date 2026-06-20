@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>ELEMENTS</title><link href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='style.css'></head><body>
+<nav id='nav'><div class='logo'>ELEMENTS</div><div class='links'><a href='#hero'>HOME</a><a href='#products'>PRODUCTS</a><a href='#order'>ORDER</a><a href='#contact'>CONTACT</a><a href='#featured'>SHOP NOW</a></div></nav>
+<section id='hero' class='hero'><div><p>Objects. Apparel. Atmosphere.</p><h1>Curated Objects For Modern Living</h1><p>Discover timeless essentials designed for contemporary lifestyles.</p><button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Explore Collection</button></div></section>
+<section class='stats'><div><h2>500+</h2><p>Orders Fulfilled</p></div><div><h2>50+</h2><p>Curated Products</p></div><div><h2>99%</h2><p>Customer Satisfaction</p></div></section>
+<section id='products'><h2>Products</h2><div class='filters'><button data-filter='all'>All</button><button data-filter='Apparel'>Apparel</button><button data-filter='Home Living'>Home Living</button><button data-filter='Accessories'>Accessories</button><button data-filter='Lifestyle'>Lifestyle</button></div><div id='productGrid'></div></section>
+
+<section class='newsletter'><h2>Join ELEMENTS</h2><input id='email' placeholder='Email'><button onclick='subscribe()'>Subscribe</button><div id='msg'></div></section>
+<section id='order'><h2>Place an Order</h2>
+<form id='order-form'><input type='text' id='o-name' placeholder='Your Name' required><input type='email' id='o-email' placeholder='Your Email' required><input type='text' id='o-product' placeholder='Product Name' required><button type='submit'>Place Order</button></form>
+<div id='order-msg'></div></section>
+<section id='contact'><h2>Get In Touch</h2><p>Vidyalankar Institute of Technology, Wadala, Mumbai - 400037</p><p>sneha.pardeshi@vit.edu | +91 98765 43210</p>
+<form onsubmit='return sendForm(event)'><input id='c-name' required placeholder='Full Name'><input id='c-email' required type='email' placeholder='Email'><input id='c-subject' required placeholder='Subject'><textarea id='c-message' required placeholder='Message'></textarea><button>Send</button></form><div id='contact-msg'></div></section>
+<footer>ELEMENTS • Modern Minimal Luxury</footer><button id='top' onclick='window.scrollTo({top:0,behavior:"smooth"})'>↑</button><script src='script.js'></script></body></html>

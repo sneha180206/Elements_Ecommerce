@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Essential Tee",
+    "category": "Apparel",
+    "price": 39,
+    "image": "assets/tee.jpg",
+    "desc": "Premium cotton essential."
+  },
+  {
+    "name": "Minimal Leather Wallet",
+    "category": "Accessories",
+    "price": 59,
+    "image": "assets/wallet.jpg",
+    "desc": "Refined everyday carry."
+  },
+  {
+    "name": "Linen Henley Shirt",
+    "category": "Apparel",
+    "price": 74,
+    "image": "assets/henley.jpg",
+    "desc": "Breathable luxury linen."
+  },
+  {
+    "name": "Terrarium Kit",
+    "category": "Lifestyle",
+    "price": 49,
+    "image": "assets/terrarium.jpg",
+    "desc": "Build your ecosystem."
+  },
+  {
+    "name": "Scented Candle Set",
+    "category": "Home Living",
+    "price": 69,
+    "image": "assets/candles.jpg",
+    "desc": "Curated aroma trio."
+  },
+  {
+    "name": "Canvas Tote Bag",
+    "category": "Accessories",
+    "price": 45,
+    "image": "assets/tote.jpg",
+    "desc": "Minimal everyday tote."
+  },
+  {
+    "name": "Japandi Diffuser",
+    "category": "Home Living",
+    "price": 89,
+    "image": "assets/diffuser.jpg",
+    "desc": "Atmospheric diffuser."
+  },
+  {
+    "name": "Hexagon Sunglasses",
+    "category": "Accessories",
+    "price": 79,
+    "image": "assets/sunglasses.jpg",
+    "desc": "Modern geometric frame."
+  },
+  {
+    "name": "Charcoal Hoodie",
+    "category": "Apparel",
+    "price": 95,
+    "image": "assets/hoodie.jpg",
+    "desc": "Heavyweight comfort."
+  }
+]

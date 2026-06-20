@@ -1,0 +1,33 @@
+name: Deploy to GCP
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Authenticate to GCP
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v1
+
+      - name: Validate site files (CI step)
+        run: |
+          echo "Checking required files exist..."
+          test -f index.html && echo "index.html OK"
+          test -f style.css && echo "style.css OK"
+          test -f script.js && echo "script.js OK"
+          test -f products.json && echo "products.json OK"
+
+      - name: Deploy to GCS (CD step)
+        run: |
+          gsutil -m cp -r index.html style.css script.js products.json assets pages gs://elements-ecommerce-sneha/
+          echo "Deployment complete!"
